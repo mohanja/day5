@@ -1,0 +1,70 @@
+(a).
+var odd=function(a){
+return a%2===0}
+console.log(odd(2));
+
+(b)
+let string = "";
+function caps() {
+  console.log([string.toUpperCase() ]);
+}
+caps(string);
+
+(c)
+let sum=[1,2,3,4,5];
+let add=sum.reduce(function (a,b){
+   return a+b
+}
+    
+)
+console.log(add)
+
+(d)
+function prime(array,num){
+  array=new Array();
+  for(var i=2;i<=num;i++){
+      for(var j=2;j<i;j++){
+          if(i%j==0){break;}
+          array.push(i)
+      }
+  }
+  return array
+}
+console.log(prime([],5))
+
+
+ARROW FUCTION
+--------------
+(a).
+var odd=(a)=>{
+return a%2===0}
+console.log(odd(2));
+
+(b)
+let string = "";
+string =()=> {
+  console.log([string.toUpperCase()]);
+}
+caps(string);
+
+
+(c)
+let sum=[1,2,3,4,5];
+let add=sum.reduce=> (a,b){a+b}
+console.log(add)
+
+(d)
+ prime=(array,num)=>{
+  array=new Array();
+  for(var i=2;i<=num;i++){
+      for(var j=2;j<i;j++){
+          if(i%j==0){break;}
+          array.push(i)
+      }
+  }
+  return array
+}
+console.log(prime([],5))
+
+
+
